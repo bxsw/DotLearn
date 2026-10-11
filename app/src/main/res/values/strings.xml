@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DotLearn</string>
+
+    <!-- common -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_add">Add</string>
+    <string name="action_back">Back</string>
+    <string name="action_close">Close</string>
+    <string name="action_done">Done</string>
+    <string name="action_search">Search</string>
+    <string name="action_rename">Rename</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="label_untitled">Untitled</string>
+    <string name="label_none">None</string>
+    <string name="label_all">All</string>
+    <string name="label_optional">Optional</string>
+    <string name="label_unknown">Unknown</string>
+    <string name="delete_confirm_title">Delete this item?</string>
+    <string name="delete_confirm_message">This cannot be undone.</string>
+    <string name="msg_saved">Saved</string>
+
+    <!-- navigation -->
+    <string name="nav_today">Today</string>
+    <string name="nav_focus">Focus</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_explain">Explain</string>
+    <string name="nav_me">Me</string>
+
+    <!-- today -->
+    <string name="today_greeting">Ready to learn?</string>
+    <string name="today_due_review">Due for review</string>
+    <string name="today_focus_today">Focus today</string>
+    <string name="today_streak">Day streak</string>
+    <string name="today_mastered">Mastered</string>
+    <string name="today_no_due">Nothing due today. Nice work.</string>
+    <string name="today_recent">Recent concepts</string>
+    <string name="today_quick_new_note">New note</string>
+    <string name="today_quick_start_focus">Start focus</string>
+    <string name="today_quick_new_concept">New concept</string>
+    <string name="today_quick_new_subject">New subject</string>
+    <string name="today_start_review">Start review</string>
+    <string name="today_empty_title">No subjects yet</string>
+    <string name="today_empty_desc">Create a subject to organise your concepts.</string>
+    <string name="unit_minutes">%1$d min</string>
+    <string name="unit_hours_minutes">%1$d h %2$d min</string>
+    <string name="unit_days">%1$d d</string>
+
+    <!-- subjects -->
+    <string name="subject_title">Subject</string>
+    <string name="subject_manage">Manage subjects</string>
+    <string name="subject_add">New subject</string>
+    <string name="subject_name">Subject name</string>
+    <string name="subject_color">Colour</string>
+    <string name="subject_empty">No subjects yet</string>
+    <string name="subject_delete_confirm">Delete this subject and all of its concepts?</string>
+    <string name="subject_count">%1$d concepts</string>
+
+    <!-- concepts -->
+    <string name="concept_title">Concept</string>
+    <string name="concept_add">New concept</string>
+    <string name="concept_name">Concept name</string>
+    <string name="concept_tags">Tags</string>
+    <string name="concept_tags_hint">Separate with commas</string>
+    <string name="concept_mastery">Mastery</string>
+    <string name="concept_mastery_0">Not started</string>
+    <string name="concept_mastery_1">Learning</string>
+    <string name="concept_mastery_2">Familiar</string>
+    <string name="concept_mastery_3">Mastered</string>
+    <string name="concept_detail">Concept detail</string>
+    <string name="concept_empty">No concepts yet</string>
+    <string name="concept_delete_confirm">Delete this concept and all related records?</string>
+    <string name="concept_section_notes">Cornell notes</string>
+    <string name="concept_section_feynman">Feynman explanations</string>
+    <string name="concept_section_sessions">Study records</string>
+    <string name="concept_no_notes">No notes yet</string>
+    <string name="concept_no_feynman">No explanations yet</string>
+    <string name="concept_no_sessions">No study records yet</string>
+
+    <!-- cornell notes -->
+    <string name="notes_title">Cornell notes</string>
+    <string name="note_new">New note</string>
+    <string name="note_edit">Edit note</string>
+    <string name="note_field_title">Title</string>
+    <string name="note_field_cue">Cue</string>
+    <string name="note_field_cue_hint">Keywords and questions for self testing</string>
+    <string name="note_field_notes">Notes</string>
+    <string name="note_field_notes_hint">The main content in your own words</string>
+    <string name="note_field_summary">Summary</string>
+    <string name="note_field_summary_hint">One sentence that captures the idea</string>
+    <string name="note_self_test">Cue self test</string>
+    <string name="note_self_test_hint">Cover the notes, answer from the cue, then reveal.</string>
+    <string name="note_reveal">Reveal</string>
+    <string name="note_hide">Hide</string>
+    <string name="note_reveal_all">Reveal all</string>
+    <string name="note_hide_all">Hide all</string>
+    <string name="note_empty">No notes yet</string>
+    <string name="note_delete_confirm">Delete this note?</string>
+    <string name="note_linked_concept">Concept</string>
+    <string name="note_no_cue">Add cues to use self test</string>
+    <string name="note_progress">%1$d / %2$d revealed</string>
+
+    <!-- feynman -->
+    <string name="feynman_title">Feynman explanations</string>
+    <string name="feynman_new">New explanation</string>
+    <string name="feynman_edit">Edit explanation</string>
+    <string name="feynman_field_concept">Concept</string>
+    <string name="feynman_field_explain">Explain it simply</string>
+    <string name="feynman_field_explain_hint">Explain it as if teaching a beginner, in your own words</string>
+    <string name="feynman_field_blockers">Stuck points</string>
+    <string name="feynman_field_blockers_hint">Where did you get stuck? List them here</string>
+    <string name="feynman_field_simplified">Simplify and compare</string>
+    <string name="feynman_field_simplified_hint">One sentence, plus an analogy if possible</string>
+    <string name="feynman_step1">Pick a concept</string>
+    <string name="feynman_step2">Explain it simply</string>
+    <string name="feynman_step3">Find stuck points</string>
+    <string name="feynman_step4">Simplify with analogy</string>
+    <string name="feynman_record_start">Record</string>
+    <string name="feynman_record_stop">Stop</string>
+    <string name="feynman_play">Play</string>
+    <string name="feynman_recording">Recording</string>
+    <string name="feynman_recording_saved">Voice note saved</string>
+    <string name="feynman_mic_denied">Microphone permission is required to record</string>
+    <string name="feynman_empty">No explanations yet</string>
+    <string name="feynman_delete_confirm">Delete this explanation?</string>
+
+    <!-- simon focus -->
+    <string name="focus_title">Simon focus</string>
+    <string name="focus_new_chunk">New knowledge block</string>
+    <string name="focus_chunk_name">Block name</string>
+    <string name="focus_chunk_target">Target minutes</string>
+    <string name="focus_chunk_empty">No knowledge blocks yet</string>
+    <string name="focus_delete_confirm">Delete this block?</string>
+    <string name="focus_status_todo">To learn</string>
+    <string name="focus_status_doing">In progress</string>
+    <string name="focus_status_done">Done</string>
+    <string name="focus_progress">Progress</string>
+    <string name="focus_progress_value">%1$d / %2$d done</string>
+    <string name="focus_timer_idle">Ready</string>
+    <string name="focus_timer_running">Focusing</string>
+    <string name="focus_timer_paused">Paused</string>
+    <string name="focus_start">Start</string>
+    <string name="focus_pause">Pause</string>
+    <string name="focus_resume">Resume</string>
+    <string name="focus_give_up">Give up</string>
+    <string name="focus_session_done">Session complete</string>
+    <string name="focus_session_saved">Focus session saved</string>
+    <string name="focus_records">Recent sessions</string>
+    <string name="focus_no_records">No sessions yet</string>
+    <string name="focus_select_block">Pick a block to focus on</string>
+    <string name="focus_total_today">Today %1$s</string>
+    <string name="focus_pomodoro_len">Pomodoro length</string>
+
+    <!-- review -->
+    <string name="review_title">Review</string>
+    <string name="review_due">%1$d due</string>
+    <string name="review_again">Again</string>
+    <string name="review_good">Got it</string>
+    <string name="review_finish">Finish</string>
+    <string name="review_empty">Nothing to review right now</string>
+    <string name="review_stage">Stage %1$d of %2$d</string>
+    <string name="review_next_due">Next review in %1$d days</string>
+
+    <!-- stats -->
+    <string name="stats_title">Study stats</string>
+    <string name="stats_total_focus">Total focus</string>
+    <string name="stats_week_focus">This week</string>
+    <string name="stats_streak">Current streak</string>
+    <string name="stats_notes_count">Notes</string>
+    <string name="stats_feynman_count">Explanations</string>
+    <string name="stats_concepts_count">Concepts</string>
+    <string name="stats_mastery_distribution">Mastery distribution</string>
+    <string name="stats_last_7_days">Focus in the last 7 days</string>
+
+    <!-- settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_system">Follow system</string>
+    <string name="settings_language_zh">简体中文</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_theme">Appearance</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_study">Study</string>
+    <string name="settings_reminder">Daily review reminder</string>
+    <string name="settings_reminder_time">Reminder time</string>
+    <string name="settings_reminder_hint">Delivered offline by the system, no network needed</string>
+    <string name="settings_data">Data</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_offline_title">Fully offline</string>
+    <string name="settings_offline_desc">DotLearn does not request network permission. All data stays on this device.</string>
+    <string name="settings_permission_notifications">Notification permission</string>
+    <string name="settings_grant">Grant</string>
+    <string name="settings_granted">Granted</string>
+
+    <!-- backup -->
+    <string name="backup_export">Export backup</string>
+    <string name="backup_import">Import backup</string>
+    <string name="backup_export_success">Backup exported</string>
+    <string name="backup_import_success">Backup imported</string>
+    <string name="backup_failed">Operation failed</string>
+    <string name="backup_import_confirm">Importing will replace all current data. Continue?</string>
+    <string name="backup_share">Share backup file</string>
+    <string name="backup_pick">Pick a backup file</string>
+
+    <!-- notifications -->
+    <string name="notif_channel_name">Review reminders</string>
+    <string name="notif_channel_desc">Daily reminders for spaced repetition review</string>
+    <string name="notif_review_title">Time to review</string>
+    <string name="notif_review_body">%1$d items are waiting for review</string>
+    <string name="notif_review_body_empty">Keep your streak going with a short review</string>
+
+    <!-- chart -->
+    <string name="chart_no_data">No data yet</string>
+    <string name="weekday_mon">Mon</string>
+    <string name="weekday_tue">Tue</string>
+    <string name="weekday_wed">Wed</string>
+    <string name="weekday_thu">Thu</string>
+    <string name="weekday_fri">Fri</string>
+    <string name="weekday_sat">Sat</string>
+    <string name="weekday_sun">Sun</string>
+</resources>

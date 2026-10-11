@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 麦克风：仅用于费曼讲解的本地录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 通知：用于离线复习提醒 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+      注意：本应用刻意【不声明】 android.permission.INTERNET。
+      这是保证「完全离线 + 数据不出本机」的硬约束：
+      即使代码中出现网络请求，系统也会直接拒绝，属于可验证的架构级保证。
+
+      构建后清单中还会出现若干由 WorkManager 自动合并的权限：
+        ACCESS_NETWORK_STATE / WAKE_LOCK / RECEIVE_BOOT_COMPLETED / FOREGROUND_SERVICE
+      其中 ACCESS_NETWORK_STATE 仅能"读取"连接状态，不具备收发任何数据的能力，
+      且在没有 INTERNET 权限的前提下无法建立任何网络连接。
+    -->
+
+    <application
+        android:name=".DotLearnApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DotLearn"
+        tools:targetApi="34">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.DotLearn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
